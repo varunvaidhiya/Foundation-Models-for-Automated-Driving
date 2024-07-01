@@ -155,3 +155,8 @@ autonomous-vehicle-ai/
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Note
+
+I will be actively working on the project till September 2024 . Please star and Watch the repo inorder to stay updated 
+-Thanks 
+
