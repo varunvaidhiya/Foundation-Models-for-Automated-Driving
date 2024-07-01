@@ -90,6 +90,66 @@ Edit the YAML files in the `configs/` directory to customize:
 ## Project Structure
 
 
+autonomous-vehicle-ai/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── labeled/
+│
+├── models/
+│   ├── vision_model/
+│   ├── llm/
+│   └── compressed/
+│
+├── src/
+│   ├── data_processing/
+│   │   ├── __init__.py
+│   │   ├── video_to_frames.py
+│   │   └── labeling.py
+│   │
+│   ├── model_training/
+│   │   ├── __init__.py
+│   │   ├── vision_model_finetuning.py
+│   │   └── llm_finetuning.py
+│   │
+│   ├── model_compression/
+│   │   ├── __init__.py
+│   │   ├── quantization.py
+│   │   ├── pruning.py
+│   │   └── knowledge_distillation.py
+│   │
+│   ├── agent_framework/
+│   │   ├── __init__.py
+│   │   ├── perception_agent.py
+│   │   └── planning_agent.py
+│   │
+│   └── edge_deployment/
+│       ├── __init__.py
+│       └── inference.py
+│
+├── notebooks/
+│   ├── data_exploration.ipynb
+│   ├── model_evaluation.ipynb
+│   └── compression_analysis.ipynb
+│
+├── tests/
+│   ├── test_data_processing.py
+│   ├── test_model_training.py
+│   ├── test_model_compression.py
+│   └── test_agent_framework.py
+│
+├── configs/
+│   ├── data_config.yaml
+│   ├── model_config.yaml
+│   ├── agent_config.yaml
+│   └── deployment_config.yaml
+│
+├── requirements.txt
+├── setup.py
+├── README.md
+└── .gitignore
+
 
 ## Contributing
 
