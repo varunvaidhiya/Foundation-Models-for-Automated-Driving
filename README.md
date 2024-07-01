@@ -89,7 +89,7 @@ Edit the YAML files in the `configs/` directory to customize:
 
 ## Project Structure
 
-
+```
 autonomous-vehicle-ai/
 │
 ├── data/
@@ -149,7 +149,7 @@ autonomous-vehicle-ai/
 ├── setup.py
 ├── README.md
 └── .gitignore
-
+```
 
 ## Contributing
 
