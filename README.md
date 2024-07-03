@@ -89,6 +89,56 @@ Edit the YAML files in the `configs/` directory to customize:
 
 ## Project Structure
 
+```graph TD
+    A[Raw Video Data] --> B[Video to Frames Conversion]
+    B --> C[Frame Storage]
+    C --> D[Vision Language Model Labeling]
+    D --> E[Labeled Dataset]
+    E --> F[Data Augmentation]
+    F --> G[Vision Model Fine-tuning]
+    F --> H[LLM Fine-tuning]
+    
+    G --> I[Trained Vision Model]
+    H --> J[Trained LLM]
+    
+    I --> K[Model Quantization]
+    I --> L[Model Pruning]
+    I --> M[Knowledge Distillation]
+    
+    J --> K
+    J --> L
+    J --> M
+    
+    K --> N[Compressed Vision Model]
+    L --> N
+    M --> N
+    
+    K --> O[Compressed LLM]
+    L --> O
+    M --> O
+    
+    N --> P[Perception Agent]
+    O --> P
+    O --> Q[Planning Agent]
+    
+    P --> R[Sensor Data Processing]
+    Q --> S[Path Planning]
+    
+    R --> T[Object Detection]
+    R --> U[Scene Understanding]
+    
+    S --> V[Route Optimization]
+    S --> W[Obstacle Avoidance]
+    
+    T --> X[Edge Inference Engine]
+    U --> X
+    V --> X
+    W --> X
+    
+    X --> Y[Vehicle Control Systems]
+    Y --> Z[Autonomous Vehicle Operation]
+```
+
 ```
 autonomous-vehicle-ai/
 │
