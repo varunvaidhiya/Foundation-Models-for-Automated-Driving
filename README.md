@@ -89,7 +89,8 @@ Edit the YAML files in the `configs/` directory to customize:
 
 ## Project Structure
 
-   graph TD
+```mermaid
+graph TD
     A[Raw Video Data] --> B[Video to Frames Conversion]
     B --> C[Frame Storage]
     C --> D[Vision Language Model Labeling]
@@ -138,7 +139,8 @@ Edit the YAML files in the `configs/` directory to customize:
     X --> Y[Vehicle Control Systems]
     Y --> Z[Autonomous Vehicle Operation]
 
-
+```
+   
 ```
 autonomous-vehicle-ai/
 │
