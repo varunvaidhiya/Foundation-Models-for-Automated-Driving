@@ -1,0 +1,16 @@
+data:
+  labeled_data_file: "data/labeled/labeled_data.json"
+  img_dir: "data/processed/frames"
+
+model:
+  num_classes: 10  # Adjust based on your specific classification needs
+  save_path: "models/vision_model/trained_model.pth"
+  quantized_save_path: "models/compressed/quantized_vision_model.pth"
+
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 10
+
+compression:
+  quantization_backend: "fbgemm"  # Use "qnnpack" for ARM-based processors
